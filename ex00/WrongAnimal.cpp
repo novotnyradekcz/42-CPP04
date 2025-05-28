@@ -6,7 +6,7 @@
 /*   By: rnovotny <rnovotny@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 21:42:25 by rnovotny          #+#    #+#             */
-/*   Updated: 2025/05/17 21:43:18 by rnovotny         ###   ########.fr       */
+/*   Updated: 2025/05/28 14:03:35 by rnovotny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,9 @@ WrongAnimal::~WrongAnimal()
 void WrongAnimal::makeSound() const
 {
 	std::cout << "* Generic WrongAnimal sound *" << std::endl;
+}
+
+std::string WrongAnimal::getType() const
+{
+	return _type;
 }
