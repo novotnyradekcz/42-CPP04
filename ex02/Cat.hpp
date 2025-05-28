@@ -6,7 +6,7 @@
 /*   By: rnovotny <rnovotny@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 21:32:39 by rnovotny          #+#    #+#             */
-/*   Updated: 2025/05/17 22:27:47 by rnovotny         ###   ########.fr       */
+/*   Updated: 2025/05/28 16:25:30 by rnovotny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 # include <iostream>
 # include <string>
 
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 # include "Brain.hpp"
 
-class Cat : public Animal
+class Cat : public AAnimal
 {
 	public:
 		Cat();
@@ -28,6 +28,8 @@ class Cat : public Animal
 		~Cat();
 
 		void makeSound() const;
+		void setBrain(Brain *brain);
+		Brain *getBrain() const;
 	private:
 		Brain *_brain;
 };
