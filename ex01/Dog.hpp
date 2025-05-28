@@ -6,7 +6,7 @@
 /*   By: rnovotny <rnovotny@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 21:37:08 by rnovotny          #+#    #+#             */
-/*   Updated: 2025/05/17 22:27:43 by rnovotny         ###   ########.fr       */
+/*   Updated: 2025/05/28 14:17:53 by rnovotny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ class Dog : public Animal
 		~Dog();
 
 		void makeSound() const;
+		void setBrain(Brain *brain);
+		Brain *getBrain() const;
 	private:
 		Brain *_brain;
 };
